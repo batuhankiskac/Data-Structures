@@ -17,7 +17,7 @@ int binarySearch(int arr[], int size, int target) {
 		else
 			right = mid - 1;
 		// Yeni ortayı hesapla
-		mid = (left + right) / 2;
+		mid = left + (right - left) / 2;
 	}
 	// Bulunamazsa -1 döndür
 	return -1;
