@@ -35,7 +35,7 @@ public:
 	}
 
 	void enqueue(int item) {
-		if (isFull) {
+		if (isFull()) {
 			std::cout << "Queue is full!\n";
 			return;
 		}
@@ -68,3 +68,4 @@ public:
 };
 
 #endif
+
