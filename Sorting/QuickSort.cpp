@@ -9,8 +9,8 @@ static int partition(int arr[], int low, int high) {
 			std::swap(arr[i], arr[j]);
 			i++;
 		}
-		std::swap(arr[i + 1], arr[high]);
 	}
+	std::swap(arr[i + 1], arr[high]);
 	return i + 1;
 }
 
