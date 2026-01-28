@@ -6,8 +6,8 @@ static int partition(int arr[], int low, int high) {
 
 	for (int j = low; j < high; j++) {
 		if (arr[j] < pivot) {
-			std::swap(arr[i], arr[j]);
 			i++;
+			std::swap(arr[i], arr[j]);
 		}
 	}
 	std::swap(arr[i + 1], arr[high]);
