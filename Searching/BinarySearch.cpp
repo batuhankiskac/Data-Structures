@@ -3,7 +3,7 @@
 int binarySearch(int arr[], int size, int target) {
 	int left = 0;
 	int right = size - 1;
-	int mid = (left + right) / 2;
+	int mid = left + (right - left) / 2;
 
 	// Arama aralığı geçerli olduğu sürece devam et
 	while (left <= right) {
@@ -31,7 +31,7 @@ int binarySearchRecursive(int arr[], int left, int right, int target) {
 	if (left > right)
 		return -1;
 
-	int mid = (left + right) / 2;
+	int mid = left + (right - left) / 2;
 	// Ortadaki eleman aranan değer mi?
 	if (arr[mid] == target)
 		return mid;
