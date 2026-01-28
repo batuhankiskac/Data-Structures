@@ -24,6 +24,6 @@ void cocktailShakerSort(int arr[], int n) {
 			if (arr[i] < arr[i - 1])
 				std::swap(arr[i], arr[i - 1]);
 		}
-		start--;
+		start++;
 	}
 }
